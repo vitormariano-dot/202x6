@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920'), linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7));
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.cta-small {
+  background: #ff2d55;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.cta-small:hover {
+  transform: scale(1.05);
+}
+
+.hero-content {
+  max-width: 800px;
+  z-index: 2;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+h1 span {
+  color: #ff2d55;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #ff2d55;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: 0 10px 30px rgba(255, 45, 85, 0.4);
+  transition: all 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(255, 45, 85, 0.6);
+}
+
+.hero-visual {
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+  z-index: 1;
+}
+
+.phone-mockup {
+  width: 220px;
+  height: 440px;
+  background: #111;
+  border-radius: 30px;
+  border: 8px solid #333;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.screen {
+  height: 100%;
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.screen span {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-top: 1rem;
+  color: #ff2d55;
+}
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-proof {
+  text-align: center;
+  background: #111;
+}
+
+.social-proof h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.stat .number {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff2d55;
+}
+
+.stat .label {
+  opacity: 0.7;
+}
+
+.how-it-works {
+  text-align: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.step {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #333;
+}
+
+.step-num {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #ff2d55;
+  margin-bottom: 1rem;
+}
+
+.features {
+  background: #0a0a0a;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature {
+  background: #111;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature .icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.testimonials {
+  text-align: center;
+  background: linear-gradient(135deg, #16213e, #0f3460);
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 2rem auto;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  opacity: 0.7;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem;
+  background: #000;
+  opacity: 0.7;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hero-visual {
+    position: static;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  nav {
+    left: 1rem;
+    right: 1rem;
+  }
+}
